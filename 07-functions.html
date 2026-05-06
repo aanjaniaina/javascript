@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Fuctions </title>
+  </head>
+  <body>
+    <script>
+
+      /*
+      function function1() {
+        console.log('hello');
+        console.log(2+2);
+      }
+
+      function1();
+      */
+
+
+
+
+
+      /*
+      function calculateTax(parameter1) {// we say that this function takes a parameter
+        console.log(parameter1 * 0.1);
+      }
+      //calculateTax();
+      calculateTax(2000);//2000 is now saved in 'parameter1'/ it is called an argument
+      */
+
+      function calculateTax(cost, taxPercent = 0.1) {//0.1 is a default value
+
+        //console.log(taxPercent);
+        console.log(cost * taxPercent);
+      }
+      //calculateTax();
+      calculateTax(2000, 0.2);
+      //calculateTax(5000);
+
+    </script>
+  </body>
+</html>
