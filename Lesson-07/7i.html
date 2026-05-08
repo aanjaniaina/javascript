@@ -1,0 +1,19 @@
+<!--Update convertLength so that if you give it an invalid unit, it will return 'invalid unit:${unit}'.
+convertLength(5, 'lbs', 'lbs') => 'invalid unit:lbs'-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Lesson 7 I </title>
+  </head>
+  <body>
+    <script>
+      function convertLength(unit, from, to){
+        if (from == 'lbs' && to == 'lbs'){
+          console.log(`Invalid unit: ${unit}`);
+        }
+      }
+      convertLength(5, 'lbs', 'lbs');
+    </script>
+  </body>
+</html>
