@@ -10,7 +10,7 @@ Create a function 'updateCalculation' and reuse the code.-->
   <body>
     <p>
       <button onclick="
-        calculation += '1';
+        return updateCalculation();
         console.log(calculation);"> 
         1 
       </button>
@@ -128,7 +128,7 @@ Create a function 'updateCalculation' and reuse the code.-->
         calculation += value;
         console.log(calculation);
       }
-      return calculation;
+      return updateCalculation();
     </script>
   </body>
 </html>
