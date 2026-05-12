@@ -5,96 +5,84 @@ Create a function 'updateCalculation' and reuse the code.-->
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Lesson 7 J </title>
+    <title> Calculator </title>
   </head>
+
   <body>
     <p>
       <button onclick="
-        return updateCalculation();
-        console.log(calculation);"> 
+        return updateCalculation('1');"> 
         1 
       </button>
 
       <button onclick="
-        calculation += '2';
-        console.log(calculation);"> 
+        return updateCalculation('2');"> 
         2 
       </button>
 
       <button onclick="
-        calculation += '3';
-        console.log(calculation);"> 
+        return updateCalculation('3');"> 
         3 
       </button>
 
       <button onclick="
-        calculation += ' + ';
-        console.log(calculation);"> 
+        return updateCalculation(' + ');"> 
         + 
       </button>
     </p>
 
     <p>
       <button onclick="
-        calculation += '4';
-        console.log(calculation);"> 
+        return updateCalculation('4');"> 
         4 
       </button>
 
       <button onclick="
-        calculation += '5';
-        console.log(calculation);"> 
+        return updateCalculation('5');"> 
         5 
       </button>
 
       <button onclick="
-        calculation += '6';
-        console.log(calculation);"> 
+        return updateCalculation('6');"> 
         6 
       </button>
 
       <button onclick="
-        calculation += ' - ' ;
-        console.log(calculation);"> 
+        return updateCalculation(' - ');">
         - 
       </button>
     </p>
 
     <p>
       <button onclick="
-        updateCalculation(value);"> 
+        return updateCalculation('7');"> 
         7 
       </button>
 
       <button onclick="
-        calculation += '8';
-        console.log(calculation);"> 
+        return updateCalculation('8');"> 
         8 
       </button>
 
       <button onclick="
-        calculation += '9';
-        console.log(calculation);"> 
+        return updateCalculation('9');"> 
         9 
       </button>
 
       <button onclick="
-        calculation += ' * ';
-        console.log(calculation);"> 
+        return updateCalculation(' * ');"> 
         * 
       </button>
     </p>
 
     <p>
       <button onclick="
-        calculation += '0';
-        console.log(calculation);"> 
+      return updateCalculation('0');">
         0 
       </button>
 
       <button onclick="
-        calculation += ' . ';
-        console.log(calculation);"> 
+        return updateCalculation('.');"> 
         . 
       </button>
 
@@ -106,8 +94,7 @@ Create a function 'updateCalculation' and reuse the code.-->
       </button>
 
       <button onclick="
-        calculation += ' / ';
-        console.log(calculation);"> 
+        return updateCalculation('/');"> 
         / 
       </button>      
     </p>
@@ -115,20 +102,19 @@ Create a function 'updateCalculation' and reuse the code.-->
     <p>
       <button onclick="
       calculation = '';
-      console.log('Cleared.')">
+      console.log(calculation);">
         Clear
       </button>
     </p>
     
 
     <script>
-      function updateCalculation(value) {
-        let calculation = "";
+      let calculation = "";
 
+      function updateCalculation(value) {
         calculation += value;
         console.log(calculation);
       }
-      return updateCalculation();
     </script>
   </body>
 </html>
